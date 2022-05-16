@@ -58,19 +58,34 @@ const Header = () => {
             exit={{ opacity: 0, x: 200 }}
             className="flex justify-center items-center gap-8 ml-auto"
           >
-            <li className="text-base hover:text-headingColor text-textColor duration-100 transition-all ease-in-out cursor-pointer">
+            <li
+              className="text-base hover:text-headingColor text-textColor duration-100 transition-all ease-in-out cursor-pointer"
+              onClick={() => setIsMenu(!isMenu)}
+            >
               Home
             </li>
-            <li className="text-base hover:text-headingColor text-textColor duration-100 transition-all ease-in-out cursor-pointer">
+            <li
+              onClick={() => setIsMenu(!isMenu)}
+              className="text-base hover:text-headingColor text-textColor duration-100 transition-all ease-in-out cursor-pointer"
+            >
               Menu
             </li>
-            <li className="text-base hover:text-headingColor text-textColor duration-100 transition-all ease-in-out cursor-pointer">
+            <li
+              onClick={() => setIsMenu(!isMenu)}
+              className="text-base hover:text-headingColor text-textColor duration-100 transition-all ease-in-out cursor-pointer"
+            >
               Offers
             </li>
-            <li className="text-base hover:text-headingColor text-textColor duration-100 transition-all ease-in-out cursor-pointer">
+            <li
+              onClick={() => setIsMenu(!isMenu)}
+              className="text-base hover:text-headingColor text-textColor duration-100 transition-all ease-in-out cursor-pointer"
+            >
               About Us
             </li>
-            <li className="text-base hover:text-headingColor text-textColor duration-100 transition-all ease-in-out cursor-pointer">
+            <li
+              onClick={() => setIsMenu(!isMenu)}
+              className="text-base hover:text-headingColor text-textColor duration-100 transition-all ease-in-out cursor-pointer"
+            >
               Contact Us
             </li>
           </motion.ul>
@@ -99,7 +114,7 @@ const Header = () => {
                   <Link to={"/createItem"}>
                     <p
                       className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base"
-                      onClick={() => {}}
+                      onClick={() => setIsMenu(!isMenu)}
                     >
                       New Item <MdAdd />
                     </p>
